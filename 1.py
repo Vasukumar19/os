@@ -1,4 +1,4 @@
-"""class IndexedAllocation:
+class IndexedAllocation:
     def __init__(self,size):
         self.disk=[0]*size
     def allocate(self,indexed_block,blocks):
@@ -138,7 +138,7 @@ def parent(pipein):
         print(f"parent received: {msg.decode()}")
         os.close(pipein)
 if __name__=='__main__':
-    parent(None)"""
+    parent(None)
 
 def banker_algorithm():
     # P0, P1, P2, P3, P4 are the names of Process
@@ -191,3 +191,4 @@ def banker_algorithm():
     print(f' P{ans[n - 1]}')
 
 banker_algorithm()
+
